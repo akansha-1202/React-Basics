@@ -129,3 +129,56 @@ Execute your code only after the DOM has `initialized`, which makes DOM manipula
 
 
 <hr>
+
+
+
+
+
+1. Hello World using HTML
+
+```javascript
+<body>
+  <h1>Hello World!</h1>
+</body>
+```
+
+<hr>
+
+2. Hello World using JS
+```javascript
+<body>
+  <div id="root"></div>
+  <script>
+    const root = document.querySelector("#root");
+    const heading = document.createElement("h1");
+    heading.innerText = "Hello World!";
+    root.appendChild(heading);
+  </script>
+</body>
+```
+<hr>
+
+
+3. Hello World using React
+
+```javascript
+<body>
+  <div id="root"></div>
+
+  <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+  <script>
+    const heading = React.createElement('h1', {id: 'text'}, 'Hello World!')
+    const root = ReactDOM.createRoot(document.querySelector("#root"));
+    root.render(heading);
+  </script>
+
+</body>
+```
