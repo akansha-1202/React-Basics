@@ -110,7 +110,7 @@ A: `Async` - The async attribute is a `boolean attribute`. The script is downloa
 <script src="demo_defer.js" defer></script>
 ```
 
-![Alt text](./asyncVsDefer.png)
+![Alt text](./AsyncVsDefer.png)
 
 
 Unless you're supporting ancient legacy systems, always add `type="module"` to all your script tags:
