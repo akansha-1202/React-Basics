@@ -1,0 +1,41 @@
+1.CDN
+2.CrossOrigin
+3.React and ReactDOM
+
+
+Episode: 2 ==> Part : 1
+
+1.npm ==> it install the package i.e., npm install <package Name>
+2.package.json ==> it keeps the approx. version of dependencies. it keep the configuration of our NPM. We must push it on GitHub
+3.Bundlers ==> parcel, vite , webpack
+4.dependencies ==> we also use in production,  dev-dependencies ==> that we are used in development like parcel is dev-dependecy
+5.tilde(~) ==>update major version of package
+  caret(^) ==> update minor/patch version of package
+6.package-lock.json ==> it keeps the exact version of dependencies and transitive dependencies. We must push it on github
+7.transitive dependencies ==> dependencies of dependencies like parcel is a dependency but parcel is also have so much dependencies when we install dependency node modules comes with so much code i.e., it is so much
+8.node-modules ==> it is database that contain the actual data of our dependencies that our project needs. We don't need to push it on GitHub so we put it inside .gitignore ==> /node_modules
+9..gitignore
+10. It is not necessary to send node_modules file to GitHub but the most important file is package.json bcz it contains the all details of dependencies that are used in project. So if it present , we can regenerate node_modules by just running command "npm install"
+
+Episode: 2 ==> Part : 2
+
+11. Igniting the App ==> npx parcel index.html
+12. parcel will host our app on a server ==> localhost:1234
+13. npx ==> it executes the package i.e., npx <packageName>
+     npx parcel index.html(source file)
+14. We install REACT & REACT-DOM because CDN is not good way to use them.
+     npm i react react-dom
+
+About Parcel:
+15. HMR: hot module replacement
+16. File Watcher Algorithm
+17. Minification
+18. Bundling
+19. Compressing
+20. Consistent Hashing
+21. Diffrential Bundling:
+22. Tree Shaking Algorithm 
+
+23. In package.json, "main":"App.js", this key is removed as it tells the entry point of project
+24. "dist" folder : This folder contains the files build files for production when you run command "npx parcel build index.html". It contains main 3 files which are html, css, js. 
+25. 
