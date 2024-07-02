@@ -1,0 +1,22 @@
+Episode: 3 ==> part 1
+
+1. In package.json, we create our scripts so we will give starting point of our project inside scripts key like this : 
+
+"scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+
+Now, you can simply run script in terminal "npm run start" === npm parcel index.html" and "npm run build === npm parcel build index.html"
+
+
+2. JSX ==> Combination of HTML and JS 
+
+You can not say JSX is HTML written in JS. These are separate things. You can say , JSX is HTML-like or XML-like synatx.
+
+
+
+3. Transpiler ==> Babel
+
+Babel convert JSX code to browser's understable code
