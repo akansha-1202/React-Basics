@@ -16,7 +16,47 @@ Now, you can simply run script in terminal "npm run start" === npm parcel index.
 You can not say JSX is HTML written in JS. These are separate things. You can say , JSX is HTML-like or XML-like synatx.
 
 
-
 3. Transpiler ==> Babel
 
 Babel convert JSX code to browser's understable code
+
+
+Episode: 3 ==> part 3
+
+4. class & className ==> 
+               class == HTML
+               className == JSX
+
+5. All attributes in JSX will write in camelCase.
+
+
+Episode: 3 ==> part 4
+
+6. React Component ==> 
+                Class Based Component - OLD
+                Funtional Based Component - NEW - Returns the React Element i.e., JSX
+
+  const HeadingCompo = () = <h1>Namaste React Funtional Component</h1>
+
+  But if you are writing your HTML part in multiple lines then you have write in thid way : 
+
+   const HeadingCompo = () = (
+      <h1 className="head">
+         Namaste React Funtional Component
+      </h1>)
+
+  const HeadingCompo = () = {
+    return <h1>Namaste React Functional Component</h1>
+  }
+
+7. Component Composition ==> When you are composing or rendering  a other compnents inside a Component
+
+
+Episode: 3 ==> part 5
+
+8. You can call a component in three ways in other component :
+   
+  1. {HeadingCompo()}
+  2. <HeadingCompo/>
+  3. <HeadingCompo></HeadingCompo>
+
